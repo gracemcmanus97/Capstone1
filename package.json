@@ -1,0 +1,18 @@
+{
+  "name": "capstoneproject",
+  "version": "1.0.0",
+  "description": "Grace's Movie Recs Capstone Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grace McManus",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "rollbar": "^2.26.1"
+  }
+}

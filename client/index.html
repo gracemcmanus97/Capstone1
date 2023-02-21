@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+<title>Movie Recommendations</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,intial-scale=1.0">
+<meta http-equiv="refresh" content="60">
+<link rel="shortcut icon" type="shortcut icon" href="">
+<link rel="stylesheet" href="styles.css">
+</head>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <button onclick="window.location.href='registration.html'">Sign Up</button>
+    <button onclick="window.location.href='login.html'">Login</button>
+</div>
+<body>
+<h1 id="heading">What Should I Watch?</h1>
+<h2 id="about">Not sure what to watch tonight? Feeling picky but still want to watch a movie? Scroll down below and answer these 4 questions to get move recommendations tailored to you!</h2>
+<br>
+<br>
+<table class="quiz">
+<tr>
+<p class="bold">Maturity rating?</p>
+</tr>
+<tr>
+<input value="G & PG" type="radio" name="q1"/>A) G & PG<br/>
+<input value="PG-13 & R" type="radio" name="q1" checked="checked"/>B) PG-13 & R<br/>
+</tr>
+
+<br>
+
+<tr>
+<p class="bold">Can you sit through a 2 hour movie or longer? </p>
+</tr>
+<tr>
+<input value="Yes" type="radio" name="q2"/>A) Yes<br>
+<input value="No" type="radio" name="q2" checked="checked"/>B) No<br>
+</tr>
+
+<br>
+
+<tr>
+<p class="bold">Are you wanting to watch an older movie or newer movie?</p>
+</tr>
+<tr>
+<input value="Pre-2000" type="radio" name="q3"/>A) Pre-2000<br>
+<input value="Post-2000" type="radio" name="q3" checked="checked"/>B) Post-2000<br>
+</tr>
+
+<br>
+
+<tr>
+<p class="bold">What genre of movie are you looking to watch?</p>
+</tr>
+<tr>
+<input value="Action" type="radio" name="q4"/>A) Action<br>
+<input value="Thriller" type="radio" name="q4" checked="checked"/>B) Thriller<br>
+<input value="Horror" type="radio" name="q4" />C) Horror<br>
+<input value="Comedy" type="radio" name="q4"/>D) Comedy<br>
+<input value="Drama" type="radio" name="q4"/>E) Drama<br>
+</tr>
+</table>
+<button style="font-size:30px;" type="button" id="recommendation-button">Get Recommendation!</button>
+<br><br>
+<div id="display-section">
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="main.js">
+    
+</script>
+</body>
+
+</html>
